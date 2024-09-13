@@ -27,14 +27,14 @@ class Bibliotecario extends Persona implements Gestionable{
             System.out.println("El libro ya está disponible y no puede ser devuelto.");
         } else {
             libro.devolver();
-            System.out.println("El bibliotecario " + nombre + " " + apellido + " ha registrado la devolución del libro '" + libro.getTitulo() + "' por el usuario " + usuario.getNombre() + ".");
+            System.out.println("La bibliotecaria " + nombre + " " + apellido + " ha registrado la devolución del libro '" + libro.getTitulo() + "' por el usuario " + usuario.getNombre() + ".");
         }
     }
 
     //sobreescribe el metodo abstracto de la clase padre
     @Override
     public void mostrarDatos() {
-        System.out.println("Bibliotecario: " + nombre + " " + apellido + ", ID de empleado: " + idEmpleado);
+        System.out.println("Bibliotecaria: " + nombre + " " + apellido + ", ID de empleado: " + idEmpleado);
     }
 }
 
